@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CF165DA1137BDC6F000C435A /* NSMutableData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1686DC135BE7F000ACCC08 /* NSMutableData+Additions.m */; };
+		CF165DA2137BDC6F000C435A /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFED1BF1135CA96C00F91B0E /* NSString+Additions.m */; };
+		CF165DA3137BDC6F000C435A /* AFPProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5C5CA513549997007E3B8C /* AFPProtocol.m */; };
+		CF165DA4137BDC6F000C435A /* AFPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CF74DCE31356117D006456DF /* AFPMessage.m */; };
+		CF165DA5137BDC6F000C435A /* AFPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5C5D321356105B007E3B8C /* AFPSession.m */; };
+		CF165DA6137BDC6F000C435A /* AFPSession+Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB51B3D135D405A009FE21A /* AFPSession+Volume.m */; };
+		CF165DA7137BDC6F000C435A /* AFPSession+ExtAttrs.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF2D1D213738ADF000E7094 /* AFPSession+ExtAttrs.m */; };
+		CF165DA8137BDC6F000C435A /* AFPSession+FileDir.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2BD436136E458100598FDB /* AFPSession+FileDir.m */; };
+		CF165DA9137BDC6F000C435A /* AFPSession+Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = CFED1CFF135F1C0B00F91B0E /* AFPSession+Directory.m */; };
+		CF165DAA137BDC6F000C435A /* AFPSession+File.m in Sources */ = {isa = PBXBuildFile; fileRef = CFED1D01135F1C1B00F91B0E /* AFPSession+File.m */; };
+		CF165DAB137BDC6F000C435A /* AFPSession+Fork.m in Sources */ = {isa = PBXBuildFile; fileRef = CFED1D03135F1C4300F91B0E /* AFPSession+Fork.m */; };
+		CF165DAC137BDC6F000C435A /* AFPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE4A1E8135444E700983285 /* AFPConnection.m */; };
+		CF165DAD137BDC6F000C435A /* AFPConnection+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF00AE01369BEA7008C20BB /* AFPConnection+Info.m */; };
+		CF165DAE137BDC6F000C435A /* AFPConnection+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB51C9A135D7250009FE21A /* AFPConnection+Login.m */; };
+		CF165DAF137BDC6F000C435A /* AFPConnection+Session.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF00B051369C33A008C20BB /* AFPConnection+Session.m */; };
+		CF165DB0137BDC6F000C435A /* AFPListener.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE4A1E313543C4200983285 /* AFPListener.m */; };
+		CF165DB1137BDC6F000C435A /* AFPDHXContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B1BBF136EE59400927E99 /* AFPDHXContext.m */; };
+		CF165DB2137BDC6F000C435A /* AFPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB51E8A135FC4A9009FE21A /* AFPServer.m */; };
+		CF165DB3137BDC6F000C435A /* AFPVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = CFED1D14135F430100F91B0E /* AFPVolume.m */; };
+		CF165DB4137BDC6F000C435A /* AFPDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB51E81135FC392009FE21A /* AFPDirectory.m */; };
+		CF165DB5137BDC6F000C435A /* AFPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB51FEA13611602009FE21A /* AFPFile.m */; };
+		CF165DB6137BDC6F000C435A /* AFPNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB51FFB13611972009FE21A /* AFPNode.m */; };
+		CF165DB7137BDC6F000C435A /* AFPOpenFork.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2BD469136E519E00598FDB /* AFPOpenFork.m */; };
+		CF165DB8137BDC6F000C435A /* MRFSVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE5DBFC13665C670078BED1 /* MRFSVolume.m */; };
+		CF165DB9137BDC6F000C435A /* MRFSServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE5DC0313665D540078BED1 /* MRFSServer.m */; };
+		CF165DBA137BDC6F000C435A /* MRFSPrivates.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBE500313670A7E004ED7D2 /* MRFSPrivates.m */; };
+		CF165DC0137BDC8C000C435A /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB51CD3135D8F48009FE21A /* libcrypto.dylib */; };
+		CF165DC1137BDC8C000C435A /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE5DCAC136692B60078BED1 /* DiskArbitration.framework */; };
+		CF165DC3137BDC97000C435A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		CF165F0C137BDE7B000C435A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF165F0B137BDE7B000C435A /* CoreServices.framework */; };
+		CF165FD1137BDF16000C435A /* MRFS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF165D99137BDBD5000C435A /* MRFS.framework */; };
+		CF165FE3137BDFE8000C435A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF165FE1137BDFE8000C435A /* InfoPlist.strings */; };
+		CF165FF2137BE0E7000C435A /* MRFS.h in Headers */ = {isa = PBXBuildFile; fileRef = CF165FF0137BE0E7000C435A /* MRFS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF166008137BE1B5000C435A /* MRFSServer.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE5DC0213665D540078BED1 /* MRFSServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF16600A137BE1B5000C435A /* MRFSOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE5DE091367A63F0078BED1 /* MRFSOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF16600B137BE1B6000C435A /* MRFSVolume.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE5DBFB13665C670078BED1 /* MRFSVolume.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF1B4D69137C2F5D00C3AE8D /* MRFS.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CF165D99137BDBD5000C435A /* MRFS.framework */; };
+		CFE5DE251367AB3B0078BED1 /* LoopbackFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE5DE241367AB3B0078BED1 /* LoopbackFileSystem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF165FCE137BDEDE000C435A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF165D98137BDBD5000C435A;
+			remoteInfo = MRFS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF1B4D74137C2F6700C3AE8D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF1B4D69137C2F5D00C3AE8D /* MRFS.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* LoopbackFS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopbackFS_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* LoopbackFS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LoopbackFS-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* LoopbackFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopbackFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF165D99137BDBD5000C435A /* MRFS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRFS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF165D9A137BDBD5000C435A /* MRFS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRFS-Info.plist"; sourceTree = "<group>"; };
+		CF165E4B137BDDC1000C435A /* MRFS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFS_Prefix.pch; sourceTree = "<group>"; };
+		CF165F0B137BDE7B000C435A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		CF165FE2137BDFE8000C435A /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF165FF0137BE0E7000C435A /* MRFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFS.h; sourceTree = "<group>"; };
+		CF1686DB135BE7F000ACCC08 /* NSMutableData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Additions.h"; sourceTree = "<group>"; };
+		CF1686DC135BE7F000ACCC08 /* NSMutableData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Additions.m"; sourceTree = "<group>"; };
+		CF2BD435136E458100598FDB /* AFPSession+FileDir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFPSession+FileDir.h"; sourceTree = "<group>"; };
+		CF2BD436136E458100598FDB /* AFPSession+FileDir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPSession+FileDir.m"; sourceTree = "<group>"; };
+		CF2BD468136E519E00598FDB /* AFPOpenFork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPOpenFork.h; sourceTree = "<group>"; };
+		CF2BD469136E519E00598FDB /* AFPOpenFork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPOpenFork.m; sourceTree = "<group>"; };
+		CF5C5CA413549997007E3B8C /* AFPProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPProtocol.h; sourceTree = "<group>"; };
+		CF5C5CA513549997007E3B8C /* AFPProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPProtocol.m; sourceTree = "<group>"; };
+		CF5C5D311356105B007E3B8C /* AFPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPSession.h; sourceTree = "<group>"; };
+		CF5C5D321356105B007E3B8C /* AFPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPSession.m; sourceTree = "<group>"; };
+		CF74DCE21356117D006456DF /* AFPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPMessage.h; sourceTree = "<group>"; };
+		CF74DCE31356117D006456DF /* AFPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPMessage.m; sourceTree = "<group>"; };
+		CF9B1BBE136EE59400927E99 /* AFPDHXContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPDHXContext.h; sourceTree = "<group>"; };
+		CF9B1BBF136EE59400927E99 /* AFPDHXContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPDHXContext.m; sourceTree = "<group>"; };
+		CFB51B3D135D405A009FE21A /* AFPSession+Volume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPSession+Volume.m"; sourceTree = "<group>"; };
+		CFB51C9A135D7250009FE21A /* AFPConnection+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPConnection+Login.m"; sourceTree = "<group>"; };
+		CFB51CD3135D8F48009FE21A /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		CFB51E80135FC392009FE21A /* AFPDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPDirectory.h; sourceTree = "<group>"; };
+		CFB51E81135FC392009FE21A /* AFPDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPDirectory.m; sourceTree = "<group>"; };
+		CFB51E89135FC4A9009FE21A /* AFPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPServer.h; sourceTree = "<group>"; };
+		CFB51E8A135FC4A9009FE21A /* AFPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPServer.m; sourceTree = "<group>"; };
+		CFB51FE913611602009FE21A /* AFPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPFile.h; sourceTree = "<group>"; };
+		CFB51FEA13611602009FE21A /* AFPFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPFile.m; sourceTree = "<group>"; };
+		CFB51FFA13611972009FE21A /* AFPNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPNode.h; sourceTree = "<group>"; };
+		CFB51FFB13611972009FE21A /* AFPNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPNode.m; sourceTree = "<group>"; };
+		CFBE500213670A7E004ED7D2 /* MRFSPrivates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFSPrivates.h; sourceTree = "<group>"; };
+		CFBE500313670A7E004ED7D2 /* MRFSPrivates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRFSPrivates.m; sourceTree = "<group>"; };
+		CFE4A1E213543C4200983285 /* AFPListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPListener.h; sourceTree = "<group>"; };
+		CFE4A1E313543C4200983285 /* AFPListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPListener.m; sourceTree = "<group>"; };
+		CFE4A1E7135444E700983285 /* AFPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPConnection.h; sourceTree = "<group>"; };
+		CFE4A1E8135444E700983285 /* AFPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPConnection.m; sourceTree = "<group>"; };
+		CFE5DBFB13665C670078BED1 /* MRFSVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFSVolume.h; sourceTree = "<group>"; };
+		CFE5DBFC13665C670078BED1 /* MRFSVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRFSVolume.m; sourceTree = "<group>"; };
+		CFE5DC0213665D540078BED1 /* MRFSServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFSServer.h; sourceTree = "<group>"; };
+		CFE5DC0313665D540078BED1 /* MRFSServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRFSServer.m; sourceTree = "<group>"; };
+		CFE5DCAC136692B60078BED1 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = System/Library/Frameworks/DiskArbitration.framework; sourceTree = SDKROOT; };
+		CFE5DE091367A63F0078BED1 /* MRFSOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFSOperations.h; sourceTree = "<group>"; };
+		CFE5DE231367AB3B0078BED1 /* LoopbackFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopbackFileSystem.h; sourceTree = "<group>"; };
+		CFE5DE241367AB3B0078BED1 /* LoopbackFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopbackFileSystem.m; sourceTree = "<group>"; };
+		CFE5E05813692E040078BED1 /* ObjC+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjC+Util.h"; sourceTree = "<group>"; };
+		CFED1BF0135CA96C00F91B0E /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		CFED1BF1135CA96C00F91B0E /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		CFED1CFF135F1C0B00F91B0E /* AFPSession+Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPSession+Directory.m"; sourceTree = "<group>"; };
+		CFED1D01135F1C1B00F91B0E /* AFPSession+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPSession+File.m"; sourceTree = "<group>"; };
+		CFED1D03135F1C4300F91B0E /* AFPSession+Fork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPSession+Fork.m"; sourceTree = "<group>"; };
+		CFED1D13135F430100F91B0E /* AFPVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPVolume.h; sourceTree = "<group>"; };
+		CFED1D14135F430100F91B0E /* AFPVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPVolume.m; sourceTree = "<group>"; };
+		CFF00AE01369BEA7008C20BB /* AFPConnection+Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPConnection+Info.m"; sourceTree = "<group>"; };
+		CFF00B051369C33A008C20BB /* AFPConnection+Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPConnection+Session.m"; sourceTree = "<group>"; };
+		CFF2D1D213738ADF000E7094 /* AFPSession+ExtAttrs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFPSession+ExtAttrs.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				CF165FD1137BDF16000C435A /* MRFS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF165D97137BDBD5000C435A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF165DC3137BDC97000C435A /* Foundation.framework in Frameworks */,
+				CF165F0C137BDE7B000C435A /* CoreServices.framework in Frameworks */,
+				CF165DC1137BDC8C000C435A /* DiskArbitration.framework in Frameworks */,
+				CF165DC0137BDC8C000C435A /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* AppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* AppDelegate.m */,
+				CFE5DE231367AB3B0078BED1 /* LoopbackFileSystem.h */,
+				CFE5DE241367AB3B0078BED1 /* LoopbackFileSystem.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF165D99137BDBD5000C435A /* MRFS.framework */,
+				8D1107320486CEB800E47090 /* LoopbackFS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MRFS */ = {
+			isa = PBXGroup;
+			children = (
+				CFE4A1E113543BD400983285 /* Core */,
+				CF165E4A137BDD85000C435A /* Other Sources */,
+				CF165E46137BDD33000C435A /* Resources */,
+				CF165D73137BD95C000C435A /* Filesystems */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = MRFS;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* LoopbackFS_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* LoopbackFS-Info.plist */,
+				CF165FE1137BDFE8000C435A /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				CF165F0B137BDE7B000C435A /* CoreServices.framework */,
+				CFE5DCAC136692B60078BED1 /* DiskArbitration.framework */,
+				CFB51CD3135D8F48009FE21A /* libcrypto.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF165D73137BD95C000C435A /* Filesystems */ = {
+			isa = PBXGroup;
+			children = (
+				CF165D7E137BD9A6000C435A /* LoopbackFS */,
+			);
+			path = Filesystems;
+			sourceTree = "<group>";
+		};
+		CF165D7E137BD9A6000C435A /* LoopbackFS */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+			);
+			path = LoopbackFS;
+			sourceTree = "<group>";
+		};
+		CF165E46137BDD33000C435A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF165D9A137BDBD5000C435A /* MRFS-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF165E4A137BDD85000C435A /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CF165E4B137BDDC1000C435A /* MRFS_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		CF168738135C062E00ACCC08 /* Apple Filing Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CF5C5CA413549997007E3B8C /* AFPProtocol.h */,
+				CF5C5CA513549997007E3B8C /* AFPProtocol.m */,
+				CF74DCE21356117D006456DF /* AFPMessage.h */,
+				CF74DCE31356117D006456DF /* AFPMessage.m */,
+				CF5C5D311356105B007E3B8C /* AFPSession.h */,
+				CF5C5D321356105B007E3B8C /* AFPSession.m */,
+				CFB51B3D135D405A009FE21A /* AFPSession+Volume.m */,
+				CFF2D1D213738ADF000E7094 /* AFPSession+ExtAttrs.m */,
+				CF2BD435136E458100598FDB /* AFPSession+FileDir.h */,
+				CF2BD436136E458100598FDB /* AFPSession+FileDir.m */,
+				CFED1CFF135F1C0B00F91B0E /* AFPSession+Directory.m */,
+				CFED1D01135F1C1B00F91B0E /* AFPSession+File.m */,
+				CFED1D03135F1C4300F91B0E /* AFPSession+Fork.m */,
+				CFE4A1E7135444E700983285 /* AFPConnection.h */,
+				CFE4A1E8135444E700983285 /* AFPConnection.m */,
+				CFF00AE01369BEA7008C20BB /* AFPConnection+Info.m */,
+				CFB51C9A135D7250009FE21A /* AFPConnection+Login.m */,
+				CFF00B051369C33A008C20BB /* AFPConnection+Session.m */,
+				CFE4A1E213543C4200983285 /* AFPListener.h */,
+				CFE4A1E313543C4200983285 /* AFPListener.m */,
+				CF9B1BBE136EE59400927E99 /* AFPDHXContext.h */,
+				CF9B1BBF136EE59400927E99 /* AFPDHXContext.m */,
+			);
+			name = "Apple Filing Protocol";
+			sourceTree = "<group>";
+		};
+		CF168739135C063300ACCC08 /* Cocoa Additions */ = {
+			isa = PBXGroup;
+			children = (
+				CFE5E05813692E040078BED1 /* ObjC+Util.h */,
+				CF1686DB135BE7F000ACCC08 /* NSMutableData+Additions.h */,
+				CF1686DC135BE7F000ACCC08 /* NSMutableData+Additions.m */,
+				CFED1BF0135CA96C00F91B0E /* NSString+Additions.h */,
+				CFED1BF1135CA96C00F91B0E /* NSString+Additions.m */,
+			);
+			name = "Cocoa Additions";
+			sourceTree = "<group>";
+		};
+		CF16873B135C071100ACCC08 /* User File System */ = {
+			isa = PBXGroup;
+			children = (
+				CF165FF0137BE0E7000C435A /* MRFS.h */,
+				CFE5DE091367A63F0078BED1 /* MRFSOperations.h */,
+				CFE5DC0213665D540078BED1 /* MRFSServer.h */,
+				CFE5DC0313665D540078BED1 /* MRFSServer.m */,
+				CFE5DBFB13665C670078BED1 /* MRFSVolume.h */,
+				CFE5DBFC13665C670078BED1 /* MRFSVolume.m */,
+				CFBE500213670A7E004ED7D2 /* MRFSPrivates.h */,
+				CFBE500313670A7E004ED7D2 /* MRFSPrivates.m */,
+			);
+			name = "User File System";
+			sourceTree = "<group>";
+		};
+		CFE4A1E113543BD400983285 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF168739135C063300ACCC08 /* Cocoa Additions */,
+				CF168738135C062E00ACCC08 /* Apple Filing Protocol */,
+				CFED1D54135F518000F91B0E /* File System Structure */,
+				CF16873B135C071100ACCC08 /* User File System */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CFED1D54135F518000F91B0E /* File System Structure */ = {
+			isa = PBXGroup;
+			children = (
+				CFB51E89135FC4A9009FE21A /* AFPServer.h */,
+				CFB51E8A135FC4A9009FE21A /* AFPServer.m */,
+				CFED1D13135F430100F91B0E /* AFPVolume.h */,
+				CFED1D14135F430100F91B0E /* AFPVolume.m */,
+				CFB51E80135FC392009FE21A /* AFPDirectory.h */,
+				CFB51E81135FC392009FE21A /* AFPDirectory.m */,
+				CFB51FE913611602009FE21A /* AFPFile.h */,
+				CFB51FEA13611602009FE21A /* AFPFile.m */,
+				CFB51FFA13611972009FE21A /* AFPNode.h */,
+				CFB51FFB13611972009FE21A /* AFPNode.m */,
+				CF2BD468136E519E00598FDB /* AFPOpenFork.h */,
+				CF2BD469136E519E00598FDB /* AFPOpenFork.m */,
+			);
+			name = "File System Structure";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF165D94137BDBD5000C435A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF165FF2137BE0E7000C435A /* MRFS.h in Headers */,
+				CF166008137BE1B5000C435A /* MRFSServer.h in Headers */,
+				CF16600A137BE1B5000C435A /* MRFSOperations.h in Headers */,
+				CF16600B137BE1B6000C435A /* MRFSVolume.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* LoopbackFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LoopbackFS" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				CF1B4D74137C2F6700C3AE8D /* Copy Frameworks */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF165FCF137BDEDE000C435A /* PBXTargetDependency */,
+			);
+			name = LoopbackFS;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MRFS;
+			productReference = 8D1107320486CEB800E47090 /* LoopbackFS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF165D98137BDBD5000C435A /* MRFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF165D9E137BDBD6000C435A /* Build configuration list for PBXNativeTarget "MRFS" */;
+			buildPhases = (
+				CF165D94137BDBD5000C435A /* Headers */,
+				CF165D95137BDBD5000C435A /* Resources */,
+				CF165D96137BDBD5000C435A /* Sources */,
+				CF165D97137BDBD5000C435A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRFS;
+			productName = MRFS;
+			productReference = CF165D99137BDBD5000C435A /* MRFS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = han9kin;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MRFS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MRFS */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF165D98137BDBD5000C435A /* MRFS */,
+				8D1107260486CEB800E47090 /* LoopbackFS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				CF165FE3137BDFE8000C435A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF165D95137BDBD5000C435A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */,
+				CFE5DE251367AB3B0078BED1 /* LoopbackFileSystem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF165D96137BDBD5000C435A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF165DA1137BDC6F000C435A /* NSMutableData+Additions.m in Sources */,
+				CF165DA2137BDC6F000C435A /* NSString+Additions.m in Sources */,
+				CF165DA3137BDC6F000C435A /* AFPProtocol.m in Sources */,
+				CF165DA4137BDC6F000C435A /* AFPMessage.m in Sources */,
+				CF165DA5137BDC6F000C435A /* AFPSession.m in Sources */,
+				CF165DA6137BDC6F000C435A /* AFPSession+Volume.m in Sources */,
+				CF165DA7137BDC6F000C435A /* AFPSession+ExtAttrs.m in Sources */,
+				CF165DA8137BDC6F000C435A /* AFPSession+FileDir.m in Sources */,
+				CF165DA9137BDC6F000C435A /* AFPSession+Directory.m in Sources */,
+				CF165DAA137BDC6F000C435A /* AFPSession+File.m in Sources */,
+				CF165DAB137BDC6F000C435A /* AFPSession+Fork.m in Sources */,
+				CF165DAC137BDC6F000C435A /* AFPConnection.m in Sources */,
+				CF165DAD137BDC6F000C435A /* AFPConnection+Info.m in Sources */,
+				CF165DAE137BDC6F000C435A /* AFPConnection+Login.m in Sources */,
+				CF165DAF137BDC6F000C435A /* AFPConnection+Session.m in Sources */,
+				CF165DB0137BDC6F000C435A /* AFPListener.m in Sources */,
+				CF165DB1137BDC6F000C435A /* AFPDHXContext.m in Sources */,
+				CF165DB2137BDC6F000C435A /* AFPServer.m in Sources */,
+				CF165DB3137BDC6F000C435A /* AFPVolume.m in Sources */,
+				CF165DB4137BDC6F000C435A /* AFPDirectory.m in Sources */,
+				CF165DB5137BDC6F000C435A /* AFPFile.m in Sources */,
+				CF165DB6137BDC6F000C435A /* AFPNode.m in Sources */,
+				CF165DB7137BDC6F000C435A /* AFPOpenFork.m in Sources */,
+				CF165DB8137BDC6F000C435A /* MRFSVolume.m in Sources */,
+				CF165DB9137BDC6F000C435A /* MRFSServer.m in Sources */,
+				CF165DBA137BDC6F000C435A /* MRFSPrivates.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF165FCF137BDEDE000C435A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF165D98137BDBD5000C435A /* MRFS */;
+			targetProxy = CF165FCE137BDEDE000C435A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CF165FE1137BDFE8000C435A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF165FE2137BDFE8000C435A /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Filesystems/LoopbackFS/LoopbackFS_Prefix.pch;
+				INFOPLIST_FILE = "Filesystems/LoopbackFS/LoopbackFS-Info.plist";
+				PRODUCT_NAME = LoopbackFS;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Filesystems/LoopbackFS/LoopbackFS_Prefix.pch;
+				INFOPLIST_FILE = "Filesystems/LoopbackFS/LoopbackFS-Info.plist";
+				PRODUCT_NAME = LoopbackFS;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF165D9C137BDBD6000C435A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MRFS_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = LOG_OFF;
+				INFOPLIST_FILE = "MRFS-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = MRFS;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF165D9D137BDBD6000C435A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MRFS_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = LOG_OFF;
+				INFOPLIST_FILE = "MRFS-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = MRFS;
+				SKIP_INSTALL = YES;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LoopbackFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MRFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF165D9E137BDBD6000C435A /* Build configuration list for PBXNativeTarget "MRFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF165D9C137BDBD6000C435A /* Debug */,
+				CF165D9D137BDBD6000C435A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

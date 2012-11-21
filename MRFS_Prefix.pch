@@ -1,0 +1,7 @@
+/*
+ * Prefix header for all source files of the 'MRFS' target in the 'MRFS' project
+ */
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
