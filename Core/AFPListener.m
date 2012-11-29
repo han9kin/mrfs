@@ -7,6 +7,7 @@
  */
 
 #import <unistd.h>
+#import <sys/time.h>
 #import <sys/socket.h>
 #import <sys/types.h>
 #import <netinet/in.h>
@@ -19,7 +20,8 @@
 
 
 #ifndef LOG_OFF
-#define LOG_LIFECYCLE 0
+#define LOG_LIFECYCLE     0
+#define LOG_LISTENER_INFO 1
 #endif
 
 
@@ -130,7 +132,9 @@ void AFPDNSServiceRegisterRecordReply(DNSServiceRef aNameService, DNSRecordRef a
 
     mPort = ntohs(sAddress.sin_port);
 
-    NSLog(@"listening from port: %d", mPort);
+#if LOG_LISTENER_INFO
+    NSLog(@"port: %d", mPort);
+#endif
 
     /*
      * wait for connection
@@ -160,6 +164,63 @@ void AFPDNSServiceRegisterRecordReply(DNSServiceRef aNameService, DNSRecordRef a
 }
 
 
+- (NSString *)uniqueLocalHostName
+{
+    char            sName[100];
+    char           *sPtr;
+    struct timeval  sTime;
+
+    gettimeofday(&sTime, NULL);
+
+    sPtr = &sName[0];
+
+    /*
+     * tv_sec
+     */
+    if (sTime.tv_sec < 0)
+    {
+        sTime.tv_sec *= -1;
+        *sPtr = 'n';
+    }
+    else
+    {
+        *sPtr = 'p';
+    }
+
+    sPtr++;
+
+    for (long long sVal = sTime.tv_sec; sVal > 0; sVal /= 26)
+    {
+        *sPtr = 'a' + sVal % 26;
+        sPtr++;
+    }
+
+    /*
+     * separator
+     */
+    *sPtr = '-';
+    sPtr++;
+    *sPtr = 'u';
+    sPtr++;
+
+    /*
+     * tv_usec
+     */
+    for (long long sVal = sTime.tv_usec; sVal > 0; sVal /= 26)
+    {
+        *sPtr = 'a' + sVal % 26;
+        sPtr++;
+    }
+
+    /*
+     * terminator
+     */
+    *sPtr = 0;
+
+    return [NSString stringWithFormat:@"%s.mrfs.local", sName];
+}
+
+
 - (BOOL)registerNameService:(NSError **)aError
 {
     DNSServiceErrorType sResult;
@@ -174,7 +235,11 @@ void AFPDNSServiceRegisterRecordReply(DNSServiceRef aNameService, DNSRecordRef a
         sAddress.s_addr = htonl(INADDR_LOOPBACK);
 
         [mHost autorelease];
-        mHost = [[[mServer serverName] stringByAppendingString:@".mrfs.local"] copy];
+        mHost = [[self uniqueLocalHostName] copy];
+
+#if LOG_LISTENER_INFO
+        NSLog(@"host: %@", mHost);
+#endif
 
         sResult = DNSServiceRegisterRecord(mNameService,
                                            &sRecord,
@@ -197,7 +262,10 @@ void AFPDNSServiceRegisterRecordReply(DNSServiceRef aNameService, DNSRecordRef a
 
     if (sResult)
     {
-        *aError = [NSError errorWithDomain:@"DNSServiceErrorDomain" code:sResult userInfo:nil];
+        if (aError)
+        {
+            *aError = [NSError errorWithDomain:@"DNSServiceErrorDomain" code:sResult userInfo:nil];
+        }
 
         if (mNameService)
         {
@@ -241,12 +309,6 @@ void AFPDNSServiceRegisterRecordReply(DNSServiceRef aNameService, DNSRecordRef a
         mServer       = [aServer retain];
         mConnections  = [[NSMutableArray alloc] init];
         mIdleSessions = [[NSMutableArray alloc] init];
-
-        CFUUIDRef sUUID = CFUUIDCreate(NULL);
-        mPassword = NSMakeCollectable(CFUUIDCreateString(NULL, sUUID));
-        CFRelease(sUUID);
-
-        NSLog(@"password: %@", mPassword);
     }
 
     return self;
@@ -281,6 +343,15 @@ void AFPDNSServiceRegisterRecordReply(DNSServiceRef aNameService, DNSRecordRef a
     {
         return YES;
     }
+
+    CFUUIDRef sUUID = CFUUIDCreate(NULL);
+    [mPassword autorelease];
+    mPassword = (NSString *)CFUUIDCreateString(NULL, sUUID);
+    CFRelease(sUUID);
+
+#if LOG_LISTENER_INFO
+    NSLog(@"pass: %@", mPassword);
+#endif
 
     if ([self startListening:aError])
     {
