@@ -671,15 +671,15 @@
 
 - (void)moveOffspringNode:(AFPNode *)aNode toDirectory:(AFPDirectory *)aDirectory withNewName:(NSString *)aNodeName
 {
+    NSString *sNodeName = [aNode nodeName];
+
     if (!aDirectory)
     {
         aDirectory = self;
     }
 
-    if ((aDirectory != self) || (aNodeName && ![aNodeName isEqualToString:mNodeName]))
+    if ((aDirectory != self) || (aNodeName && ![aNodeName isEqualToString:sNodeName]))
     {
-        NSString *sNodeName = [aNode nodeName];
-
         [aDirectory addOffspringNode:aNode withName:(aNodeName ? aNodeName : sNodeName)];
         [mOffspringNames removeObject:sNodeName];
         [mOffspringNodes removeObjectForKey:sNodeName];
